@@ -12,14 +12,25 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-
+<!-- font awsome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- lightgallery css -->
     <link rel="stylesheet" type="text/css" href="lightgallery/css/lightgallery.css">
     <!-- lightgallery js -->
     <script src="lightgallery/js/picturefill.min.js"></script>
     <script src="lightgallery/js/lightgallery-all.min.js"></script>
     <script src="lightgallery/js/jquery.mousewheel.min.js"></script>
+    <style type="text/css">
+      .icon_relative{
+        position: relative;
+      }
+      .icon_search {
+        position: absolute;
+        left: 50%;       
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+    </style>
     
  
     <title>電子相簿</title>
@@ -29,8 +40,9 @@
     <h1 class="my-4 text-center text-lg-left">電子相簿</h1>
      <div class="row" id="lightgallery">
        <!-- 相片 -->
-       <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/img001.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-         <a href="#" class="d-block mb-4 h-100">
+       <div class="col-lg-3 col-md-4 col-sm-6 icon_relative" data-src="img/img001.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+         <a href="#" class="d-block mb-4 h-100 ">
+           <i class="fas fa-search icon_search"></i>
            <img class="img-fluid img-thumbnail" src="img/img001.jpg" alt="img/img001.jpg">
          </a>
        </div>
